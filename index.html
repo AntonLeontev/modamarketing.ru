@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231109111612">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231114130956">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
 							<li class="mobile-social__item"><a href="" class="mobile-social__link _icon-location">ул. Маяковского, 37В,
 									Санкт-Петербург</a></li>
 						</ul>
-						<button class="menu__btn button" type="button"><span>Оставить заявку</span></button>
+						<button class="menu__btn button" type="button" data-goto=".feedback"><span>Оставить заявку</span></button>
 					</nav>
 				</div>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -53,35 +53,36 @@
 		</header>
 
 		<main class="page">
-			<section class="hero section-bottom">
+			<section class="hero" style="background-image: url('img/hero-bg.jpg');">
 				<div class="hero__container">
+					<div class="hero__inner">
+						<div class="hero__title-block">
+							<div class="hero__subtitle title">
+								Премиальная образовательная программа
+							</div>
+					<h1 class="hero__title title title_h1">Мода & Маркетинг</h1>
 					<h1 class="hero__title title title_h1">Мода & Маркетинг</h1>
 					<div class="hero__body swiper">
 						<div class="hero__wrapper swiper-wrapper">
 							<div class="hero__slide swiper-slide">
 								<div class="hero__img -ibg">
 									<picture><source srcset="img/hero/01.webp" type="image/webp"><img src="img/hero/01.jpg" alt=Image></picture>
-								</div>
-							</div>
+							<h1 class="hero__title title title_h1">Мода & Маркетинг</h1>
+					<div class="hero__body swiper">
+						<div class="hero__wrapper swiper-wrapper">
 							<div class="hero__slide swiper-slide">
 								<div class="hero__img -ibg">
-									<picture><source srcset="img/hero/02.webp" type="image/webp"><img src="img/hero/02.jpg" alt=Image></picture>
-								</div>
-							</div>
-							<div class="hero__slide swiper-slide">
-								<div class="hero__img -ibg">
-									<picture><source srcset="img/hero/03.webp" type="image/webp"><img src="img/hero/03.jpg" alt=Image></picture>
-								</div>
-							</div>
+									<picture><source srcset="img/hero/01.webp" type="image/webp"><img src="img/hero/01.jpg" alt=Image></picture>
 						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-					<div class="hero__block d-flex">
-						<div class="d-flex__item hero__text text-main">
-							Премиальная образовательная программа «Мода & Маркетинг» от&nbsp;продюсеров и&nbsp;фэшн
-							экспертов.
+						<div class="hero__text title title_h4">
+							<p>
+								Современный формат продвижения, пиара и&nbsp;высоких продаж для производителей одежды.
+							</p>
+							<p>
+								Опыт фэшн продюсеров, экспертов-практиков, топовых маркетологов.
+							</p>
 						</div>
-						<button class="d-flex__item button" data-goto=".feedback" type="button"><span>Оставить заявку</span></button>
+						<button class="button" data-goto=".feedback" type="button"><span>Оставить заявку</span></button>
 					</div>
 				</div>
 			</section>
@@ -230,9 +231,8 @@
 				</div>
 				<div class="about-program__accent title title_h3">
 					<div class="about-program__container">
-						Привлеки тысячи подписчиков в свои социальные сети, стань узнаваемым и популярным брендом,
-						продавайся
-						задорого!
+						Привлеки тысячи подписчиков в социальные сети с помощью креативного контента | Получи инвестиции и
+						выходи на миллионные обороты
 					</div>
 				</div>
 				<div class="about-program__video video">
@@ -255,7 +255,7 @@
 			<section class="who section-bottom">
 				<div class="who__container">
 					<h2 class="who__title title title_h2">
-						Кому подойдет программа
+						Программа для вас, если вы:
 					</h2>
 					<div class="who__items">
 						<div class="item-who">
@@ -268,7 +268,7 @@
 						<div class="item-who">
 							<div class="item-who__text text-main">
 								Мечтаете сформировать сильный личный бренд, добиться популярности и получить возвращаемость
-								клиентов 110 %
+								клиентов
 							</div>
 							<i class="_icon-star"></i>
 						</div>
@@ -301,12 +301,13 @@
 							<i class="_icon-star"></i>
 						</div>
 					</div>
-					<button class="who__btn button" data-goto=".feedback" type="button"><span>Оставить заявку</span></button>
+					<button class="who__btn button" data-goto=".feedback" type="button"><span>Оставить заявку</span>
+					</button>
 				</div>
 			</section>
 			<section class="what">
 				<div class="what__container">
-					<h2 class="title title_h2">Что дает наша программа</h2>
+					<h2 class="title title_h2">Что даст наша программа:</h2>
 					<div class="what__items">
 						<div class="item-what">
 							<div class="item-what__img -ibg">
@@ -315,20 +316,20 @@
 							<div class="item-what__list">
 								<div class="item-what__block">
 									<div class="item-what__num">01</div>
-									<div class="item-what__text text-main">Вы сможете создать свой бренд с нуля или улучшить
-										свое производство за счет новых современных знаний
+									<div class="item-what__text text-main">Проработаете ясную концепцию, позиционирование и
+										ДНК бренда
 									</div>
 								</div>
 								<div class="item-what__block">
 									<div class="item-what__num">02</div>
-									<div class="item-what__text text-main">Научитесь вести коммерческую деятельность и
-										просчитывать экономику бренда
+									<div class="item-what__text text-main">Улучшите производство за счёт новых современных
+										знаний об ассортиментной матрице
 									</div>
 								</div>
 								<div class="item-what__block">
 									<div class="item-what__num">03</div>
-									<div class="item-what__text text-main">Научитесь вести соцсети и выходить на топовых
-										блогеров
+									<div class="item-what__text text-main">Освоите систему планирования производства и
+										расчета себестоимости
 									</div>
 								</div>
 							</div>
@@ -340,18 +341,21 @@
 							<div class="item-what__list">
 								<div class="item-what__block">
 									<div class="item-what__num">04</div>
-									<div class="item-what__text text-main">Освоите систему планирования производства
+									<div class="item-what__text text-main">Научитесь вести коммерческую деятельность и
+										просчитывать экономику бренда
 									</div>
 								</div>
 								<div class="item-what__block">
 									<div class="item-what__num">05</div>
-									<div class="item-what__text text-main">Определите форматы и каналы дистрибуции (розница,
-										опт, собственный магазин, шоурумы, маркетплейсы)
+									<div class="item-what__text text-main">Узнаете возможности получения государственной
+										поддержки и инвестиций на развитие бизнеса
 									</div>
 								</div>
 								<div class="item-what__block">
 									<div class="item-what__num">06</div>
-									<div class="item-what__text text-main">Освоите продажи в онлайн и оффлайн формате</div>
+									<div class="item-what__text text-main">Определите форматы и каналы дистрибуции
+										(розница, опт, собственный магазин, шоурум и маркетплейс)
+									</div>
 								</div>
 							</div>
 						</div>
@@ -362,26 +366,26 @@
 							<div class="item-what__list">
 								<div class="item-what__block">
 									<div class="item-what__num">07</div>
-									<div class="item-what__text text-main">Освоите эффективные способы продвижения и
-										коммуникации с потенциальными клиентами
+									<div class="item-what__text text-main">Эффектно упакуете свои социальные медиа для
+										поиска нестандартных каналов сбыта
 									</div>
 								</div>
 								<div class="item-what__block">
 									<div class="item-what__num">08</div>
-									<div class="item-what__text text-main">Получите современные знания и рабочие инструменты
-										от экспертов-практиков бизнеса
+									<div class="item-what__text text-main">Освоите эффективные стратегии продвижения и
+										коммуникации с потенциальными клиентами
 									</div>
 								</div>
 								<div class="item-what__block">
 									<div class="item-what__num">09</div>
-									<div class="item-what__text text-main">Проработаете свое позиционирование и привлечете
-										новую аудиторию
+									<div class="item-what__text text-main">Поймёте алгоритмы создания трендового контента,
+										отражающего ваш оригинальный стиль и притягивающего внимание миллионов пользователей
 									</div>
 								</div>
 								<div class="item-what__block">
 									<div class="item-what__num">10</div>
-									<div class="item-what__text text-main">Создадите продающий контент: фотосессия, карточки
-										товара, трендовые видео
+									<div class="item-what__text text-main">Получите базу проверенных поставщиков и
+										подрядчиков
 									</div>
 								</div>
 							</div>
@@ -401,7 +405,8 @@
 								начни достойно
 								зарабатывать
 							</div>
-							<button class="what__btn button" data-goto=".feedback" type="button"><span>Оставить заявку</span></button>
+							<button class="what__btn button" data-goto=".feedback" type="button">
+								<span>Оставить заявку</span></button>
 						</div>
 					</div>
 				</div>
@@ -419,13 +424,13 @@
 									Кристина Орлова
 								</div>
 								<ul class="item-expert__list">
-									<li class="_icon-star">Продюсер госпроекта «Петербургский дизайн».</li>
+									<li class="_icon-star">Продюсер госпроекта «Петербургский дизайн»</li>
 									<li class="_icon-star">Продюсер проекта, fashion эксперт, основатель
 										медиахолдинга
-										ZaKadrom.
+										ZaKadrom
 									</li>
 									<li class="_icon-star">Организатор конкурса молодых дизайнеров
-										“Fashion-практика”.
+										“Fashion-практика”
 									</li>
 									<li class="_icon-star">Ведущая ZaKadrom шоу</li>
 								</ul>
@@ -440,10 +445,10 @@
 									Кристина Варанова
 								</div>
 								<ul class="item-expert__list">
-									<li class="_icon-star">Куратор программы.</li>
-									<li class="_icon-star">Автор, сопродюсер программы Fashion маркетинг.</li>
-									<li class="_icon-star">Ментор личного бренда.</li>
-									<li class="_icon-star">Эксперт практик по коммуникациям fashion индустрии.</li>
+									<li class="_icon-star">Куратор программы</li>
+									<li class="_icon-star">Автор, сопродюсер программы Fashion маркетинг</li>
+									<li class="_icon-star">Ментор личного бренда</li>
+									<li class="_icon-star">Эксперт практик по коммуникациям fashion индустрии</li>
 									<li class="_icon-star">Бьюти агент ParisFashionWeek17</li>
 								</ul>
 							</div>
@@ -458,11 +463,11 @@
 								</div>
 								<ul class="item-expert__list">
 									<li class="_icon-star">Эксперт. Дизайнер одежды. Основатель бренда “Catarina
-										Nova”.
+										Nova”
 									</li>
-									<li class="_icon-star">Участник проекта «Петербургский дизайн».</li>
-									<li class="_icon-star">Предприниматель с 20 летним стажем.</li>
-									<li class="_icon-star">Участник международной выставки CPM и модных показов.
+									<li class="_icon-star">Участник проекта «Петербургский дизайн»</li>
+									<li class="_icon-star">Предприниматель с 20 летним стажем</li>
+									<li class="_icon-star">Участник международной выставки CPM и модных показов
 									</li>
 								</ul>
 							</div>
@@ -476,11 +481,11 @@
 									Екатерина Мамыкина
 								</div>
 								<ul class="item-expert__list">
-									<li class="_icon-star">Fashion продюсер.</li>
-									<li class="_icon-star">Коуч по позированию. Модель.</li>
-									<li class="_icon-star">Эксперт в области визуальной коммуникации.</li>
+									<li class="_icon-star">Fashion продюсер</li>
+									<li class="_icon-star">Коуч по позированию. Модель</li>
+									<li class="_icon-star">Эксперт в области визуальной коммуникации</li>
 									<li class="_icon-star">Публикации в high fashion журнале L’officiel Россия и
-										Латвия, а также в других европейских и американских изданиях.
+										Латвия, а также в других европейских и американских изданиях
 									</li>
 								</ul>
 							</div>
@@ -495,16 +500,15 @@
 								</div>
 								<ul class="item-expert__list">
 									<li class="_icon-star">Бренд директор сети универмагов российских дизайнеров
-										SLAVA.
+										SLAVA
 									</li>
-									<li class="_icon-star">Член союза Российских байеров.</li>
+									<li class="_icon-star">Член союза Российских байеров</li>
 									<li class="_icon-star">Руководитель и основатель школы стиля
-										«В МОДЕ».
+										«В МОДЕ»
 									</li>
-									<li class="_icon-star">Опыт в индустрии более 8 лет.</li>
+									<li class="_icon-star">Опыт в индустрии более 8 лет</li>
 									<li class="_icon-star">Преподаватель в школе Fashion Factory School по
 										направлению БАИНГ
-										.
 									</li>
 								</ul>
 							</div>
@@ -515,23 +519,26 @@
 							</div>
 							<div class="item-expert__body">
 								<div class="item-expert__title">
-									Евегения Овчаренко
+									Евгения Овчаренко
 								</div>
 								<ul class="item-expert__list">
 									<li class="_icon-star">Основательница маркетингового агентства полного цикла —
-										Growth Hacker$, эксперт и продюсер по личному бренду, создательница
+										Growth Hacker$, эксперт и продюсер по личному бренду
+									</li>
+									<li class="_icon-star">Cоздательница
 										крупнейшего в России медиа-форума «3D Журналистика» на 500 000 участников
 										онлайн и 1500 оффлайн с 2012 по 2017гг., где выступали: Юрий Дудь, Тина
 										Канделаки, вице-президент digital-CNN, главные редактора Forbes, GQ,
-										Esquire, РБК, NG и др. спикер TEDx, SXSW (USA).
+										Esquire, РБК, NG и др. спикер TEDx, SXSW (USA)
 									</li>
-									<li class="_icon-star">Клиенты Евгении в экспертном TikTok и Instagram набирают 100 000 подписчиков за первые месяцы, без бюджета на рекламу
-										с помощью Reels</li>
+									<li class="_icon-star">Клиенты Евгении в экспертном TikTok и Instagram набирают 100 000
+										подписчиков за первые месяцы, без бюджета на рекламу
+										с помощью Reels
+									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</section>
 			<section class="follow section-bottom">
@@ -540,13 +547,13 @@
 				</div>
 				<div class="follow__marque marque">
 					<div class="marque__inner">
-						<div class="marque__item title title_h3">TELEGRAM</div>
-						<div class="marque__item title title_h3">TELEGRAM</div>
-						<div class="marque__item title title_h3">TELEGRAM</div>
-						<div class="marque__item title title_h3">TELEGRAM</div>
-						<div class="marque__item title title_h3">TELEGRAM</div>
-						<div class="marque__item title title_h3">TELEGRAM</div>
-						<div class="marque__item title title_h3">TELEGRAM</div>
+						<div class="marque__item title title_h3">Индивидуальный подход к каждому</div>
+						<div class="marque__item title title_h3">Индивидуальный подход к каждому</div>
+						<div class="marque__item title title_h3">Индивидуальный подход к каждому</div>
+						<div class="marque__item title title_h3">Индивидуальный подход к каждому</div>
+						<div class="marque__item title title_h3">Индивидуальный подход к каждому</div>
+						<div class="marque__item title title_h3">Индивидуальный подход к каждому</div>
+						<div class="marque__item title title_h3">Индивидуальный подход к каждому</div>
 					</div>
 				</div>
 				<div class="follow__container">
@@ -602,8 +609,7 @@
 			</section>
 			<section class="feedback section-bottom">
 				<div class="feedback__container">
-					<h2 class="title title_h2">Оставьте заявку <span>или свяжитесь с&nbsp;нами удобным вам способом</span>
-					</h2>
+					<h2 class="title title_h2">Получить учебный план и&nbsp;презентацию программы</h2>
 					<div class="feedback__wrapper">
 						<div class="feedback__form">
 							<form action="form.php" method="POST" class="form" id="request_form">
@@ -620,7 +626,6 @@
 									<button class="button form__button" type="submit"><span>Оставить заявку</span></button>
 									<div class="text-main">
 										Нажимая кнопку “Оставить заявку” вы соглашаетесь на обработку персональных данных
-
 									</div>
 								</div>
 							</form>
@@ -628,8 +633,10 @@
 						<div class="feedback__contacts">
 							<h2 class="title title_h2">или свяжитесь с&nbsp;нами удобным вам способом</h2>
 							<ul class="mobile-social">
-								<li class="mobile-social__item"><a href="tel:89118352234" class="mobile-social__link _icon-phone">8 911 835-22-34</a></li>
-								<li class="mobile-social__item"><a href="https://t.me/modamarketing_ru" class="mobile-social__link _icon-telegram">TELEGRAM</a></li>
+								<li class="mobile-social__item"><a href="tel:89118352234" class="mobile-social__link _icon-phone">8 911
+										835-22-34</a></li>
+								<li class="mobile-social__item"><a href="https://t.me/modamarketing_ru" class="mobile-social__link _icon-telegram">TELEGRAM</a>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -658,7 +665,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20231109111612"></script>
+	<script src="js/app.min.js?_v=20231114130956"></script>
 </body>
 
 </html>
